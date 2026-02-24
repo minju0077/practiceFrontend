@@ -16,7 +16,7 @@ getList();
 <table>
     <thead>
         <tr>
-            <th>idx></th>
+            <th>idx</th>
             <th>제목</th>
             <th>내용</th>
         </tr>
