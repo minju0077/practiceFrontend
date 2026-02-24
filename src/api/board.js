@@ -6,16 +6,5 @@ const register = async (req) => {
   return res
 }
 
-const read = async (req) => {
-  const res = await api.get('/board/read', req)
 
-  return res
-}
-
-const list = async (req) => {
-  const res = await api.get('/board/list', req)
-
-  return res
-}
-
-export default { register, read, list }
+export default { register }
