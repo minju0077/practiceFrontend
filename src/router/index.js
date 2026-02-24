@@ -7,10 +7,17 @@ const router = createRouter({
       path: '/board',
       name: 'App',
       component: () => import('../App.vue'),
-      children: [{
+      children: [
+        {
         path: 'register',
         name: 'board_register',
-        component: () => import('../views/Board/Register.vue')}
+        component: () => import('../views/Board/Register.vue')
+      },
+      {
+        path: 'list',
+        name: 'board_list',
+        component: () => import('../views/Board/List.vue')
+      }
       ]
     }
   ],

@@ -6,5 +6,10 @@ const register = async (req) => {
   return res
 }
 
+const list = async () => {
+  const res = await api.get('board/list')
+  return res
+}
 
-export default { register }
+
+export default { register, list }

@@ -2,6 +2,7 @@
 
 import { reactive } from 'vue'
 import api from '@/api/board'
+import router from '@/router';
 
 const boardForm = reactive({
   title: '',
@@ -10,7 +11,8 @@ const boardForm = reactive({
 
 const register = async ()=>{
     const res = await api.register(boardForm);
-    console.log(res);
+    alert("작성되었습니다.");
+    router.push('/board/list');
 }
 </script>
 
