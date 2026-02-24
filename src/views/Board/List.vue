@@ -23,9 +23,9 @@ getList();
     </thead>
     <tbody>
         <tr v-for="board in boardList">
-            <td>{{ board.idx }}</td>
-            <td>{{ board.title }}</td>
-            <td>{{ board.content }}</td>
+            <td> <a :href="`/board/detail/${board.idx}`">{{ board.idx }}</a></td>
+            <td> <a :href="`/board/detail/${board.idx}`">{{ board.title }}</a></td>
+            <td> <a :href="`/board/detail/${board.idx}`">{{ board.content }}</a></td>
         </tr>
     </tbody>
 </table>

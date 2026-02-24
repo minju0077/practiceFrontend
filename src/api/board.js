@@ -11,5 +11,10 @@ const list = async () => {
   return res
 }
 
+const detail = async (idx) => {
+  const res = await api.get(`board/detail/${idx}`)
+  return res
+}
 
-export default { register, list }
+
+export default { register, list, detail }
